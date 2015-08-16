@@ -15,9 +15,9 @@
     ],    
     "require": {
         "php": ">=5.4.0",
-        "cartalyst/sentinel": "~1.0",
-        "cartalyst/support": "~1.0",
-        "illuminate/support": "4.2.*"   
+        "cartalyst/sentinel": "2.0.x-dev",
+        "cartalyst/support": "1.1.x-dev",
+        "illuminate/support": "5.1.*"   
     },
     "autoload": {
         "psr-4": {
