@@ -1,5 +1,5 @@
 {
-    "name": "roshangautam/sentinel-ldap",
+    "name": "xversial/sentinel-ldap",
     "description": "",
     "authors": [
         {
@@ -21,8 +21,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Roshangautam\\Sentinel\\Addons\\Ldap\\": "src/"
+            "Vionox\\Sentinel\\Addons\\Ldap\\": "src/"
         }        
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
