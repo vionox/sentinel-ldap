@@ -24,5 +24,11 @@
             "VIONOX\\Sentinel\\Addons\\Ldap\\": "src/"
         }        
     },
-    "minimum-stability": "stable"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-master"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
