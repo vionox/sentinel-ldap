@@ -24,7 +24,7 @@ class LdapServiceProvider extends \Illuminate\Support\ServiceProvider {
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__.'/../config/config.php');
+        $source = realpath(__DIR__.'/../../config/config.php');
 
         $this->publishes([$source => config_path('ldap.php')]);
 
