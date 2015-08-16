@@ -14,8 +14,22 @@ class LdapServiceProvider extends \Illuminate\Support\ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('vionox/sentinel-ldap', 'vionox/sentinel-ldap', __DIR__.'/..');
+        $this->setupConfig();
 	}
+
+    /**
+     * Setup the config.
+     *
+     * @return void
+     */
+    protected function setupConfig()
+    {
+        $source = realpath(__DIR__.'/../config/config.php');
+
+        $this->publishes([$source => config_path('ldap.php')]);
+
+        $this->mergeConfigFrom($source, 'ldap');
+    }
 
 	/**
 	 * {@inheritDoc}
