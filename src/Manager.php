@@ -1,4 +1,4 @@
-<?php namespace Roshangautam\Sentinel\Addons\Ldap;
+<?php namespace VIONOX\Sentinel\Addons\Ldap;
 
 
 use Closure;
@@ -57,7 +57,7 @@ class Manager {
 	public function authenticate($credentials, $remember = false)
 	{
 
-		$config = Config::get('roshangautam/sentinel-ldap::ldap');
+		$config = Config::get('vionox/sentinel-ldap::ldap');
 
 		if($conn = $this->connect($config['host'], $config['port'])) 
 		{
@@ -93,7 +93,7 @@ class Manager {
 
 	public function search($query, $attr = "sn" , $email = true) 
 	{
-		$config = Config::get('roshangautam/sentinel-ldap::ldap');
+		$config = Config::get('vionox/sentinel-ldap::ldap');
 		if($email) $query = substr($query, 0, strrpos($query, '@'));
 
 		if($conn = $this->connect($config['host'], $config['port'])) 

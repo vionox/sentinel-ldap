@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Vionox\\Sentinel\\Addons\\Ldap\\": "src/"
+            "VIONOX\\Sentinel\\Addons\\Ldap\\": "src/"
         }        
     },
     "minimum-stability": "stable"

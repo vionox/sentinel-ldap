@@ -1,4 +1,4 @@
-<?php namespace Roshangautam\Sentinel\Addons\Ldap\Laravel\Facades;
+<?php namespace VIONOX\Sentinel\Addons\Ldap\Laravel\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

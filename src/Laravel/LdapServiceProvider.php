@@ -1,6 +1,6 @@
-<?php namespace Roshangautam\Sentinel\Addons\Ldap\Laravel;
+<?php namespace VIONOX\Sentinel\Addons\Ldap\Laravel;
 
-use Roshangautam\Sentinel\Addons\Ldap\Manager;
+use VIONOX\Sentinel\Addons\Ldap\Manager;
 
 class LdapServiceProvider extends \Illuminate\Support\ServiceProvider {
 
@@ -14,7 +14,7 @@ class LdapServiceProvider extends \Illuminate\Support\ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('roshangautam/sentinel-ldap', 'roshangautam/sentinel-ldap', __DIR__.'/..');
+		$this->package('vionox/sentinel-ldap', 'vionox/sentinel-ldap', __DIR__.'/..');
 	}
 
 	/**
@@ -44,7 +44,7 @@ class LdapServiceProvider extends \Illuminate\Support\ServiceProvider {
 			return $manager;
 		});
 
-		$this->app->alias('sentinel.addons.ldap', 'Roshangautam\Sentinel\Addons\Ldap\Manager');
+		$this->app->alias('sentinel.addons.ldap', 'VIONOX\Sentinel\Addons\Ldap\Manager');
 	}
 
 	/**
